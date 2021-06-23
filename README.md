@@ -35,7 +35,7 @@
 
 ## License
 
-    This project is under [MIT]License 
+    This project is under [MIT](License) 
     Robert Okello
 
 ## Contacts
