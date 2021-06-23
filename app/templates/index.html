@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% import 'macro.html' as macro%}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+
+
+
+
+{% block content %}
+<br>
+<div class="container">
+    <div class="row">
+        
+        <div id="block-text">
+            <br>
+            <div class="row">
+                <div class="col-md-3"> </div>
+
+                <div class="col-md-6">
+                    <img src="static/images/pitch image.jpeg" style= " height:300px;width: 550px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                </div>
+
+                <div class="col-md-1"> </div>
+            </div>
+
+            <br>
+            <div>
+                <div class="col-md-3"> </div>
+                <div class="col-md-6">
+                    <p style="font-size: 20px; float:left;"> <b> In life we only have 60 seconds to impress someone. One minute to make or break us. How do we make sure that we use our one minute to actually say something meaningful ? </b> </p>
+                </div>
+                <div class="col-md-1"> </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <br>
+        <h2 style="text-shadow: 2px 2px 5px red; text-align:center;"> <strong>PITCH CATEGORIES </strong></h2>
+        <b style="font-size: 20px; text-align:center;">{{ macro.displayCategoryList(category) }} </b>
+        <br>
+        
+        
+        
+        <h3 class="add-category"><a class="btn btn-primary" href="/add/category" style="background-color:#3f8bf5; float:right;"><span aria-hidden="true"> ADD CATEGORY </span></a></h3>   
+    </div>  
+</div>
+
+
+{% endblock  %}
